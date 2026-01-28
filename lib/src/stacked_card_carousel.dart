@@ -99,7 +99,7 @@ class _CircularCarouselState extends State<CircularCarousel>
     final stackWidth = screenWidth;
     // Calculate center offset: screen center minus half of card width
     // Add small adjustment to shift right for perfect centering
-    final centerOffset = (screenWidth - cardWidth) / 2 ;
+    final centerOffset = (screenWidth - cardWidth) / 2;
 
     final double angle = dragDelta * (math.pi / 2);
     final List<_CardConfig> configs = [
@@ -176,7 +176,7 @@ class _CircularCarouselState extends State<CircularCarousel>
               child: Transform(
                 alignment: Alignment.center,
                 transform: Matrix4.identity()
-                  ..translate(0.0, 0.0, z)
+                  ..setEntry(3, 2, z)
                   ..scale(scale, scale),
                 child: Opacity(
                   opacity: opacity,

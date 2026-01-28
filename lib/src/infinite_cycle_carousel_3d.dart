@@ -131,7 +131,8 @@ class _InfiniteCycleCarousel3DState extends State<InfiniteCycleCarousel3D> {
       alignment: Alignment.center,
       transform: Matrix4.identity()
         ..setEntry(3, 2, widget.perspective) // Perspective
-        ..translate(translateX, 0.0, -translateZ)
+        ..setEntry(0, 3, translateX)
+        ..setEntry(2, 3, -translateZ)
         ..rotateY(-angle),
       child: Opacity(
         opacity: opacity,
