@@ -1,6 +1,6 @@
 name: infinite_cycle_carousel
 description: Flutter package with 9 carousel variants including 2D, 3D, ViewPager, circular, and stacked styles with infinite scrolling and auto-play.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/ishita1226/infinite_cycle_carousel
 repository: https://github.com/ishita1226/infinite_cycle_carousel
 issue_tracker: https://github.com/ishita1226/infinite_cycle_carousel/issues
